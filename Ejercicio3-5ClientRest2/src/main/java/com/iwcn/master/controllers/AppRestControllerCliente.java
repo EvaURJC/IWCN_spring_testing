@@ -57,7 +57,7 @@ public class AppRestControllerCliente implements ErrorController{
 	//Vista principal
 	@Secured({ "ROLE_USER", "ROLE_ADMIN" })
 	@RequestMapping("/principal")
-	public ModelAndView principal(SecurityContextHolderAwareRequestWrapper request) {
+	public ModelAndView principal() {
 		return new ModelAndView("principal_template");
 	}
 	
